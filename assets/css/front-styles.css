@@ -1,0 +1,106 @@
+.flag_container {
+    display: flex;
+    align-items: center;
+}
+.flag img{
+    width: 35px;
+}
+.init_selected {
+    position: absolute;
+    display: flex;
+    background: #d3d3d3;
+    padding: 7px;
+    align-items: center;
+}
+input#mobile_code{
+    padding-left: 100px;
+    height: 55px;
+}
+input#mobile_code:focus{
+    border-color:#000000;
+}
+.otp_verify_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.otp_verify_btn button{
+    padding: 15px 50px;
+    color: #ffffff;
+    background: #000000;
+    cursor: pointer;
+}
+a.back-btn {
+    padding: 15px 50px;
+    color: #ffffff;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 0;
+    border: 0.5px solid #000000;
+    margin-right: 6px;
+}
+a.back-btn:hover, .otp_verify_btn button:hover {
+    background: #eeeeee;
+    border: 0.5px solid #eeeeee;
+    color: #000000;
+}
+.phone_text{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 80px 0 40px 0;
+}
+.phone_text p{
+    font-size: 20px;
+    font-weight: 900;
+}
+/* spinner reloader */
+.sp {
+    width: 20px;
+    height: 20px;
+    clear: both;
+    border: 4px rgba(255,255,255,0.25) solid;
+    border-top: 4px #ffffff solid;
+    border-radius: 50%;
+    -webkit-animation: spCircRot 0.6s infinite linear;
+    animation: spCircRot 0.6s infinite linear;
+    margin-left: 5px;
+    display: none;
+}
+@-webkit-keyframes spCircRot {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+@keyframes spCircRot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+button#submit_btn{
+    display: flex;
+    align-items: center;
+}
+button.verify_btn {
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 0;
+}
+button.verify_btn:hover {
+    background: #eeeeee;
+    border: 0.5px solid #eeeeee;
+    color: #000000;
+}
+button.close_btn {
+    border-radius: 0;
+    border: none;
+}
